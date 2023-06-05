@@ -103,7 +103,6 @@ func ParseCompose(cfgs []compose.ConfigFile, envs map[string]string) (*Config, e
 			t := &Target{
 				Name:             targetName,
 				Context:          contextPathP,
-				Contexts:         additionalContexts,
 				Dockerfile:       dockerfilePathP,
 				DockerfileInline: dockerfileInlineP,
 				Tags:             s.Build.Tags,
